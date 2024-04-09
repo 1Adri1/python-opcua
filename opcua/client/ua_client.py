@@ -88,7 +88,8 @@ class UASocketClient(object):
         data = data.copy()
         typeid = nodeid_from_binary(data)
         if typeid == ua.FourByteNodeId(ua.ObjectIds.ServiceFault_Encoding_DefaultBinary):
-            self.logger.warning("ServiceFault from server received %s", context)
+            #Don't show the warning because it works as intended
+            #self.logger.warning("ServiceFault from server received %s", context)
             hdr = struct_from_binary(ua.ResponseHeader, data)
             hdr.ServiceResult.check()
             return False

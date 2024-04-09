@@ -11,11 +11,10 @@ install_requires = [
     "trollius; python_version < '3'",
 ]
 
-setup(name="opcua",
-      version="0.98.13",
-      description="Pure Python OPC-UA client and server library",
-      author="Olivier Roulet-Dubonnet",
-      author_email="olivier.roulet@gmail.com",
+setup(name="opcuadhbw",
+      version="0.98.14",
+      description="Pure Python OPC-UA client and server library. Edited by Adrian for DHBW project.",
+      author="Olivier Roulet-Dubonnet (Edited by Adrian)",
       url='http://freeopcua.github.io/',
       packages=find_packages(),
       provides=["opcua"],
